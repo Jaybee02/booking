@@ -8,18 +8,37 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Admin Booking 3</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
 
     <header>
-        <nav class="navbar bg-white d-flex justify-content-between border-bottom ">
-            <a href="#" class="navbar-brand width-25 md-width-20 lg-width-15 ms-3 ms-lg-4 ms-xl-5">
-                <img src="img/logo.png" alt="Our Logo" class="w-100">
+        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0">
+            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
+                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
+                <div class="offcanvas-header">
+                    <a href="#" class="navbar-brand offcanvas-title width-50 ms-3">
+                        <img src="img/logo.png" alt="Our Logo" class="w-100">
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    
+                </div>
+            </div>
+            <a href="#" class="navbar-brand ms-0 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="h-100">
             </a>
             <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
-                <div class="user-text d-flex flex-column justify-content-center me-2 me-md-4 me-lg-5">
-                    <h6 class="text-pink fs-user fw-700 m-0">Kingston I.</h6>
-                    <p class="text-grey-1 text-center fs-label m-0 mt-1">Admin</p>
+                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
+                    <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
                 </div>
                 <div class="user-pic">
                     <img src="img/user-img.png" alt="User image" class="img-fluid">
@@ -31,45 +50,46 @@
     <main>
         <div class="row p-0 m-0">
             <div class="col-lg-2 d-none d-lg-block p-0 m-0">
-                <div class="sidenav d-flex flex-column justify-content-between border-end border-bottom" style="background-color: #F4F4F4;">
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-5 w-100">
-                           
-                            <p class="text-grey-1 fs-body-2 text-center"><span class="me-2"> <img src="img/jb-vector.png" alt=""></span>Dashboard</p>
+                <div class="sidenav bg-neutral-4 box-shad-2 d-flex flex-column justify-content-between border-end border-bottom hms-border">
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="tabler:layout-dashboard"></span> Dashboard</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center active">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center"><span class="me-2"> <img src="img/jb-vector2.png" alt="" style="color:#AF13AF;"></span>Bookings</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2 active">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="eva:home-outline"></span> Rooms</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center">Guests</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:people-community-24-regular"></span> Guests</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center">Employees</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="prime:id-card"></span> Employees</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center">Notifications</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="ion:notifications-outline"></span> Notifications</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center">Settings</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:settings-24-regular" data-rotate="90deg"></span> Settings</p>
                         </a>
                     </div>
-                    <div class="sidenav-link d-flex align-items-center justify-content-center">
-                        <a href="#" class="text-decoration-none py-4 w-100">
-                            <p class="text-grey-1 fs-body-2 text-center">Log out</p>
+                    <div class="sidenav-link bg-neutral-4 d-flex align-items-center justify-content-center py-2">
+                        <a href="#" class="text-decoration-none bg-neutral-4 ps-lg-2 ps-xl-4 py-3 w-100">
+                            <p class="text-grey-1 fs-sidenav text-start m-0 ms-xl-2"><span class="iconify fs-body-2" data-icon="fluent:power-24-filled"></span> Log out</p>
                         </a>
                     </div>
                 </div>
             </div>
+
+
             <div class="main-content col-12 col-lg-10">
                 <div class="container py-4">
                     <div class="content-box bdr-rad-1 bg-white border  py-4 px-5 ">
