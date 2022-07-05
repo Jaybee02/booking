@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Booking 3</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar bg-white d-flex justify-content-between border-bottom ">
+            <a href="#" class="navbar-brand width-25 md-width-20 lg-width-15 ms-3 ms-lg-4 ms-xl-5">
+                <img src="img/logo.png" alt="Our Logo" class="w-100">
+            </a>
+            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
+                <div class="user-text d-flex flex-column justify-content-center me-2 me-md-4 me-lg-5">
+                    <h6 class="text-pink fs-user fw-700 m-0">Kingston I.</h6>
+                    <p class="text-grey-1 text-center fs-label m-0 mt-1">Admin</p>
+                </div>
+                <div class="user-pic">
+                    <img src="img/user-img.png" alt="User image" class="img-fluid">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row p-0 m-0">
+            <div class="col-lg-2 d-none d-lg-block p-0 m-0">
+                <div class="sidenav d-flex flex-column justify-content-between border-end border-bottom" style="background-color: #F4F4F4;">
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-5 w-100">
+                           
+                            <p class="text-grey-1 fs-body-2 text-center"><span class="me-2"> <img src="img/jb-vector.png" alt=""></span>Dashboard</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center active">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center"><span class="me-2"> <img src="img/jb-vector2.png" alt="" style="color:#AF13AF;"></span>Bookings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center">Guests</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center">Employees</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center">Notifications</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center">Settings</p>
+                        </a>
+                    </div>
+                    <div class="sidenav-link d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-decoration-none py-4 w-100">
+                            <p class="text-grey-1 fs-body-2 text-center">Log out</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content col-12 col-lg-10">
+                <div class="container py-4">
+                    <div class="content-box bdr-rad-1 bg-white border  py-4 px-5 ">
+                        <h6 class="fs-body-1 text-grey-1 fw-700 text-center">Guest’s Registration Form</h6>
+                        <div class="input-group d-flex justify-content-evenly mt-3">
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">First Name</p>
+                                <input type="text" name="first-name" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Last Name</p>
+                                <input type="text" name="last-name" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                        </div>
+                        <div class="input-group d-flex justify-content-evenly">
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Phone</p>
+                                <input type="number" name="number" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1  text-black">
+                            </div>
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">Email Address </p>
+                                <input type="email" name="email" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                        </div>
+                        <div class="input-group w-95 mb-4 position-relative">
+                            <p class="fs-copyright mb-1 ms-5">Address</p>
+                            <input type="text" name="text" id="" class="form-input-1 border box-shad-1 w-100 bdr-rad-2 fs-copyright py-3 px-5 mt-1 me-5 ms-5 text-black lg-width-95">
+                            
+                        </div>
+
+                        <div class="input-group d-flex justify-content-evenly">
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">State</p>
+                                <input type="text" name="state" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                                <p class="fs-copyright mb-1">City</p>
+                                <input type="text" name="city" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                        </div>
+
+                        <div class="rad px-5">
+                            <p class="fs-copyright mb-1 ">Payment method</p>
+                            <input type="radio" checked>
+                            <label for="" class="fs-copyright me-3">POS</label>
+                            <input type="radio" checked>
+                            <label for="" class="fs-copyright">Cash</label>
+                        </div>
+
+                        <div class="input-group d-flex justify-content-evenly mt-3">
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                             
+                                <input type="text" name="first-name" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black"><span>   <a href="">back</a></span>
+                            </div>
+                            <div class="short-input width-100 lg-width-42 mb-4 position-relative">
+                               
+                                <input type="text" name="last-name" id="" class="form-input-1 border box-shad-1 w-100 fs-copyright bdr-rad-2 py-3 px-5 mt-1 text-black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
